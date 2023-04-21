@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <style>
+    body {
+        font-family: 'Roboto', sans-serif;
+        /* Your other styles */
+    }
+    button {
+        font-family: 'Roboto', sans-serif;
+        /* Your other styles */
+    }
+    h1 {
+        font-family: 'Roboto', sans-serif;
+        /* Your other styles */
+    }
+    p {
+        font-family: 'Roboto', sans-serif;
+        /* Your other styles */
+    }
+    </style>
+	<title>How Cold is Dieng City (literally) Right Now?</title>
+	<style>
+		body {
+			background-color: black;
+			color: white;
+			font-size: 24px;
+			text-align: center;
+			margin-top: 100px;
+		}
+		button {
+			background-color: white;
+			color: black;
+			font-size: 24px;
+			padding: 10px 20px;
+			border: none;
+			cursor: pointer;
+		}
+	</style>
+</head>
+<body>
+	<h1>Dieng's temperature right now :</h1>
+	<button onclick="generateNumber()">Show me the temp'</button>
+	<p id="result"></p>
+	
+	<script>
+		function generateNumber() {
+			var randomNumber = Math.floor(Math.random() * (-5)) + 13;
+			document.getElementById("result").innerHTML = "Dieng's temperature right now: " + randomNumber;
+		}
+	</script>
+</body>
+</html>
